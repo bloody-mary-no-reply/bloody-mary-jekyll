@@ -14,16 +14,8 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
-    <!--<link rel="apple-touch-icon" href="img/apple-touch-icon.png">-->
-
-
-
     <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon"/>
-
-
-
-
+    <!--<link rel="apple-touch-icon" href="img/apple-touch-icon.png">-->
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -48,9 +40,11 @@
     <%=  stylesheet_link_tag '/css/theme-shop.css' %>
 
     <!-- Current Page CSS -->
-    <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
-    <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+
+    <link rel="stylesheet" href="{{ "/assets/vendor/rs-plugin/css/settings.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/vendor/rs-plugin/css/layers.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/vendor/rs-plugin/css/navigation.css" | relative_url }}">
+
     <link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css">
 
   <!-- Skin CSS -->
