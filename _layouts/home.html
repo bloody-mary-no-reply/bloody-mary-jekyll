@@ -25,13 +25,13 @@
           rel="stylesheet" type="text/css">
 
     <!-- Vendor CSS -->
-    <%=  stylesheet_link_tag '/vendor/bootstrap/css/bootstrap.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/font-awesome/css/font-awesome.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/animate/animate.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/simple-line-icons/css/simple-line-icons.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/owl.carousel/assets/owl.carousel.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/owl.carousel/assets/owl.theme.default.min.css' %>
-    <%=  stylesheet_link_tag '/vendor/magnific-popup/magnific-popup.min.css' %>
+    <link href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/animate/animate.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/simple-line-icons/css/simple-line-icons.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/owl.carousel/assets/owl.carousel.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" | relative_url }}">
+    <link href="{{ "/assets/vendor/magnific-popup/magnific-popup.min.css" | relative_url }}">
 
     <!-- Theme CSS -->
     <%=  stylesheet_link_tag '/css/theme.css' %>
