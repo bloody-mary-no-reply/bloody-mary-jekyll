@@ -46,16 +46,12 @@
     <link rel="stylesheet" href="{{ "/assets/vendor/rs-plugin/css/navigation.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/vendor/circle-flip-slideshow/css/component.css" | relative_url }}">
 
-  <!-- Skin CSS -->
-    <%=  stylesheet_link_tag '/css/skins/default.css' %>
+    <!-- Skin CSS -->
+    <link href="{{ "/assets/css/skins/default.css" | relative_url }}">
 
     <!-- Theme Custom CSS -->
-    <%=  stylesheet_link_tag '/css/custom.css' %>
+    <link href="{{ "/assets/css/custom.css" | relative_url }}">
 
     <!-- Head Libs -->
     <script src="{{ "/assets/vendor/modernizr/modernizr.min.js" | relative_url }}"></script>
-
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 </head>
