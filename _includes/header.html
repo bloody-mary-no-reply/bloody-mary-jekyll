@@ -1,0 +1,80 @@
+<header id="header"
+        data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
+  <div class="header-body">
+    <div class="header-container container">
+
+      <div class="header-row">
+        <div class="header-column">
+          <div class="header-logo">
+              <a href="index.html"> <!- fix this later !>
+              <img src="{{ "/assets/img/logo2.jpg" | relative_url }}", alt: 'Haematology' width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-to="33" >
+
+            </a>
+          </div>
+        </div>
+        <div class="header-column">
+          <div class="header-row">
+            <div class="header-search hidden-xs">
+            </div>
+            <nav class="header-nav-top">
+              <ul class="nav nav-pills">
+                <li class="hidden-xs">
+                  <a href=""?
+                    <i class="fa fa-angle-right"></i>
+                     Βιογραφικό
+                  </a>
+                      <!- safe, static_cv_path > 
+                </li>
+                <li class="hidden-xs">
+                  <a href=""?
+                      <i class="fa fa-angle-right"></i>Επικοινωνία
+                      <! , new_contact_path >
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header-row">
+            <div class="header-nav">
+              <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+                <i class="fa fa-bars"></i>
+              </button>
+              <ul class="header-social-icons social-icons hidden-xs">
+                  <li class="social-icons-facebook">
+                        <a href="https://www.facebook.com/thrombophilia.pregnancy/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="social-icons-twitter">
+                      <a href="http://www.twitter.com/drkanellopoulou" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="social-icons-linkedin">
+                      <a href="https://gr.linkedin.com/in/theoni-kanellopoulou-09695875" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                  </li>
+              </ul>
+              <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                <nav>
+                  <ul class="nav nav-pills" id="mainNav">
+                      {% for item in site.data.menu %}
+                          <li class="{% if item.link == page.url %} {{ item.active}} {% else %} {{ item.inactive }} {% endif %}"> 
+                              <a {% if item.items %} class="dropdown-toggle" {% endif %} href="{{ site.baseurl }}{{ item.link}}">{{ item.title }}</a>
+                               {% if item.items %}
+                                   <ul class="dropdown-menu">
+                                      {% for dropdown_item in item.items %}
+                                      <li>
+                                          <a href="{{site.baseurl}}{{ dropdown_item.link }}">{{ dropdown_item.title }}</a>
+                                      </li>
+                                      {% endfor %}
+                                   </ul>
+                               {% endif %}
+                          </li>
+                      {% endfor %}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
