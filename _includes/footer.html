@@ -1,0 +1,53 @@
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-ribbon">
+        <span>haematologist.gr</span>
+      </div>
+      <div class="col-md-5">
+        <div class="newsletter">
+          <h4>Πρόσφατα άρθρα</h4>
+          <% Article.where(visible: true).order(created_at: :desc).limit(4).each do |recent| %>
+              <p><%= link_to recent.title, recent %></p>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="contact-details">
+          <h4>Επικοινωνία</h4>
+          <ul class="contact">
+              <p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kanellopoulou@haematologist.gr">kanellopoulou@haematologist.gr</a>
+            </p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Follow Me</h4>
+        <ul class="social-icons">
+          {% include social-icons.html -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          <a href="index.html" class="logo">
+          </a>
+        </div>
+        <div class="col-md-7">
+            <p>© Copyright 2014 - {{ 'now' | date: "%Y" }} All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <nav id="sub-menu">
+            <ul>
+                <li><a href="">FAQ's</a></li>
+                <li><a href="">Επικοινωνία</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
