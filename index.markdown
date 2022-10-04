@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
@@ -59,7 +56,7 @@ layout: home
         <a class="tp-caption btn btn-lg btn-primary btn-slider-action"
            data-hash
            data-hash-offset="85"
-           href="/static/cv"
+           href="{{ site.baseurl }}/cv"
            data-x="center" data-hoffset="0"
            data-y="center" data-voffset="80"
            data-start="2200"
@@ -163,7 +160,7 @@ layout: home
 <div class="row">
   <div class="col-md-12">
     <p>
-      Ονομάζομαι <%= link_to 'Θεώνη Κανελλοπούλου', static_cv_path %> και είμαι Αιματολόγος - Επιμελήτρια στο Ωνάσειο
+      Ονομάζομαι <a href="{{site.baseurl}}/cv">Θεώνη Κανελλοπούλου</a> και είμαι Αιματολόγος - Επιμελήτρια στο Ωνάσειο
       Καρδιοχειρουργικό Κέντρο.
       Κύριο κλινικό και επιστημονικό μου ενδιαφέρον είναι ο τομέας της αιμόστασης (διερεύνηση και αντιμετώπιση
       θρομβοφιλίας - αιμορραγικής διάθεσης) και η αιματολογία της κύησης.
