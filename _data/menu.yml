@@ -4,12 +4,12 @@
   inactive: ""
 
 - title: ΒΙΟΓΡΑΦΙΚΟ
-  link: "/cv/"
+  link: "/cv"
   active: active
   inactive: ""
 
 - title: ΑΙΜΑΤΟΛΟΓΙΑ
-  link: "/haematology/"
+  link: "/haematology"
   active: active
   inactive: ""
 
@@ -19,13 +19,13 @@
   inactive: "dropdown"
   items:
     - title: Δημοσιεύσεις
-      link: "/publications/"
+      link: "/publications"
 
     - title: Ανακοινώσεις
-      link: "/announcements/"
+      link: "/announcements"
 
     - title: Παρουσιάσεις
-      link: "/presentations/"
+      link: "/presentations"
 
 - title: ΑΡΘΡΑ
   link:
@@ -33,27 +33,27 @@
   inactive: "dropdown"
   items:
     - title: Εγκυμοσύνη
-      link: "/publications/"
+      link: "/publications"
 
     - title: Θρομβοφιλία
-      link: "/announcements/"
+      link: "/announcements"
 
     - title: Αντιπηκτική Αγωγή
-      link: "/presentations/"
+      link: "/presentations"
 
     - title: Αιμορραγική Διάθεση
-      link: "/presentations/"
+      link: "/presentations"
 
     - title: Αναιμία
-      link: "/presentations/"
+      link: "/presentations"
 
     - title: Υψηλός Αιματοκρίτης
-      link: "/presentations/"
+      link: "/presentations"
 
     - title: Παθολογική Ανοσοκαθήλωση
-      link: "/presentations/"
+      link: "/presentations"
 
 - title: ΕΠΙΚΟΙΝΩΝΙΑ
-  link: "/haematology/"
+  link: "/haematology"
   active: active
   inactive: ""
