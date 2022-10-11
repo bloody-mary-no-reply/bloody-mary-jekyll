@@ -28,7 +28,7 @@
       link: "/presentations"
 
 - title: ΑΡΘΡΑ
-  link:
+  link: "/articles"
   active: "dropdown active"
   inactive: "dropdown"
   items:
