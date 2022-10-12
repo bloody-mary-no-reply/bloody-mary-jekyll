@@ -175,7 +175,7 @@ layout: home
       τις <%= link_to 'Ανακοινώσεις', announcements_path %> και <%= link_to 'Παρουσιάσεις', presentations_path %> στις
       οποίες έχω λάβει
       μέρος. Επιπρόσθετα, στον ιστότοπο υπάρχει ειδικό τμήμα αφιερωμένο σε
-      σύντομα, <%= link_to 'εκλαϊκευμένα άρθρα και συμβουλές', articles_path %> το
+      σύντομα, <a href="{{ site.baseurl}}/articles">εκλαϊκευμένα άρθρα και συμβουλές</a> το
       οποίο ανανεώνεται συχνά και μπορεί να ενδιαφέρει μια ευρύτερη ομάδα ανθρώπων.
     </p>
 
@@ -229,7 +229,7 @@ layout: home
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="counter">
-            <strong data-to="<%= Article.count %>">0</strong>
+            <strong data-to="{{ site.posts | size }}">0</strong>
             <label>Άρθρα</label>
           </div>
         </div>

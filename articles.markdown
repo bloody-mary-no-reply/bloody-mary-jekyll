@@ -8,25 +8,12 @@ layout: home
   {% include page-header.html title="Άρθρα" %}
 
   <h2>Άρθρα</h2>
-
-
-
-   <ul>
-  {% for post in site.posts reversed%}
-    <li>
-      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
     <div class="row">
       <div class="col-md-12">
         <div class="blog-posts">
-
           <section class="timeline">
             <div class="timeline-body">
-
-              {% for post in site.posts reversed %}
+              {% for post in site.posts %}
                   {% assign currentdate = post.date | date: "%Y %B" %}
                     {% if currentdate != date %}
                       <div class="timeline-date">
@@ -34,8 +21,6 @@ layout: home
                       </div>
                       {% assign date = currentdate %}
                    {% endif %}
-
-
                    <article class="{% cycle 'timeline-box left post post-medium', 'timeline-box right post post-medium' %}">
                      <div class="row">
                        <div class="col-md-12">
@@ -51,18 +36,14 @@ layout: home
                          </div>
                        </div>
                      </div>
-
                      <div class="row">
                        <div class="col-md-12">
-
                          <div class="post-content">
                            <h4 class="heading-primary">{{ post.title }}</h4>
-                           <p>  {{ post.content | split:'<!--break-->' | first }} ...</p>
+                           <p>{{ post.content | split:'<!--break-->' | first  | markdownify }}...</p>
                          </div>
-
                        </div>
                      </div>
-
                      <div class="row">
                        <div class="col-md-12">
                          <div class="post-meta">
@@ -70,7 +51,6 @@ layout: home
                          </div>
                        </div>
                      </div>
-
                      <div class="row">
                        <div class="col-md-12">
                          <div class="post-meta">
@@ -80,23 +60,18 @@ layout: home
                          </div>
                        </div>
                      </div>
-
                      <div class="row">
                        <div class="col-md-12">
                          <a href="{{site.baseurl}}{{ post.url }}" class='btn btn-xs btn-primary pull-right'>Διαβάστε </a>
                        </div>
                      </div>
-
                    </article>
-
               {% endfor %}
-
             </div>
           </section>
         </div>
       </div>
-      </div>
-
+    </div>
 </div>
 
 
