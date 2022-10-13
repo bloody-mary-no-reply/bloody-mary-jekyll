@@ -33,25 +33,25 @@
   inactive: "dropdown"
   items:
     - title: Εγκυμοσύνη
-      link: "/publications"
+      link: "/categories/Εγκυμοσύνη"
 
     - title: Θρομβοφιλία
-      link: "/announcements"
+      link: "/categories/Θρομβοφιλία"
 
     - title: Αντιπηκτική Αγωγή
-      link: "/presentations"
+      link: "/categories/Αντιπηκτική Αγωγή"
 
     - title: Αιμορραγική Διάθεση
-      link: "/presentations"
+      link: "/categories/Αιμορραγική Διάθεση"
 
     - title: Αναιμία
-      link: "/presentations"
+      link: "/categories/Αναιμία"
 
     - title: Υψηλός Αιματοκρίτης
-      link: "/presentations"
+      link: "/categories/Υψηλός Αιματοκρίτης"
 
     - title: Παθολογική Ανοσοκαθήλωση
-      link: "/presentations"
+      link: "/categories/Παθολογική Ανοσοκαθήλωση"
 
 - title: ΕΠΙΚΟΙΝΩΝΙΑ
   link: "/contact"

@@ -5,6 +5,8 @@ layout: home
 
 {% include page-header.html title="ΑΡΘΡΑ" %}
 
+{% capture current_category %}{{ page.categories | first }}{% endcapture %}
+
 <div class="container">
   <div class="row">
     <div class="col-md-9">
@@ -18,7 +20,7 @@ layout: home
             <h2> {{ page.title | escape }} </h2>
             <div class="post-meta">
               <span><i class="fa fa-user"></i> {{ page.author }} </span>
-              <span><i class="fa fa-tag"></i> <%= link_to(@article.art_type, articles_category_path(@article.art_type)) %></span>
+              <span><i class="fa fa-tag"></i> {{ current_category }}</span>
             </div>
             {{ content }}
             <div class="post-block post-share">
@@ -53,9 +55,11 @@ layout: home
         <hr>
         <h4 class="heading-primary">Κατηγορίες</h4>
         <ul class="nav nav-list mb-xlg">
-          <% ArticleType.constant_values.each do |type| %>
-              <li <%= type == @article.art_type ? 'class=active' : '' %> ><%= link_to "#{type} (#{Article.where(art_type: type).count})", articles_category_path(type) %></li>
-          <% end %>
+          {% for cat in site.categories %}
+            <li {% if current_category == cat[0] %}class=active{% else %}{% endif %} >
+              <a href="{{site.baseurl}}/categories/{{cat[0]}}">{{ cat[0] }} ({{ cat[1].size }})</a>
+            </li>
+          {% endfor %}
         </ul>
         <div class="tabs mb-xlg">
           <ul class="nav nav-tabs">
