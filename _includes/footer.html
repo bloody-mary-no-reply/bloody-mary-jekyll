@@ -7,9 +7,9 @@
       <div class="col-md-5">
         <div class="newsletter">
           <h4>Πρόσφατα άρθρα</h4>
-          <% Article.where(visible: true).order(created_at: :desc).limit(4).each do |recent| %>
-              <p><%= link_to recent.title, recent %></p>
-          <% end %>
+          {% for post in site.posts limit:4 %}
+            <p><a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}<a/></p>
+          {% endfor %}
         </div>
       </div>
       <div class="col-md-5">

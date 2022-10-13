@@ -2,7 +2,7 @@
 layout: home
 ---
 
- {::comment} this page is supposed to handle both all posts and specific categories {:/comment}
+{::comment} this page is supposed to handle both all posts and specific categories {:/comment}
 <div class="container">
 
   {% include page-header.html title="Άρθρα" %}
