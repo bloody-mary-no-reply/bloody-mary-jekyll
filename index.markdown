@@ -225,7 +225,8 @@ layout: home
           <div class="counter">
             {% capture case_reports %}{{ site.data.case_reports | size }}{% endcapture %}
             {% capture reviews %}{{ site.data.reviews | size }}{% endcapture %}
-            <strong data-to="{{ case_reports | plus: reviews }}">0</strong>
+            {% capture talks %}{{ site.data.talks | size }}{% endcapture %}
+            <strong data-to="{{ case_reports | plus: reviews | plus: talks}}">0</strong>
             <label>Παρουσιάσεις</label>
           </div>
         </div>

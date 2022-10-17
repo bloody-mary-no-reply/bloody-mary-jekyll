@@ -8,6 +8,24 @@ layout: home
 
   <div class="article">
     <h2>Παρουσιάσεις</h2>
+    <h2><em>Ομιλίες</em></h2>
+      <table class="table table-striped">
+        {% for talk in site.data.talks %}
+          <tr>
+            <td>
+              {{ talk.authors }}. {{ talk.title }}. <i>{{ talk.magazine }}. {{ talk.year }}</i>
+            </td>
+            <td>
+              {% if talk.pfile_file_name %}
+                <span class="label label-success">
+                  <a href="{{ site.baseurl }}/assets/publications/talks/{{ talk.pfile_file_name }}">Λήψη</a>
+                </span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table> 
+    <br>
     <h2><em>Ανασκοπήσεις</em></h2>
       <table class="table table-striped">
         {% for review in site.data.reviews %}
