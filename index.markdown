@@ -226,7 +226,8 @@ layout: home
             {% capture case_reports %}{{ site.data.case_reports | size }}{% endcapture %}
             {% capture reviews %}{{ site.data.reviews | size }}{% endcapture %}
             {% capture talks %}{{ site.data.talks | size }}{% endcapture %}
-            <strong data-to="{{ case_reports | plus: reviews | plus: talks}}">0</strong>
+            {% capture bibliographies %}{{ site.data.bibliographies | size }}{% endcapture %}
+            <strong data-to="{{ case_reports | plus: reviews | plus: talks | plus: bibliographies }}">0</strong>
             <label>Παρουσιάσεις</label>
           </div>
         </div>

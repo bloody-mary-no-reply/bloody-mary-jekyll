@@ -1,0 +1,34 @@
+- id: 41
+  authors: "Κανελλοπούλου Θ"
+  title: "Διάγνωση λεμφώματος στην κύηση"
+  magazine: "ΓΝΑ Ευαγγελισμός"
+  year: "2013"
+  pfile_file_name: "JCO-ΔΙΑΓΝΩΣΗ_ΛΕΜΦΩΜΑΤΟΣ_ΣΤΗΝ_ΚΥΗΣΗ.pdf"
+
+- id: 46
+  authors: "Κανελλοπούλου Θ"
+  title: "Αιμοχρωμάτωση.Θεραπεία με deferasirox."
+  magazine: "ΓΝΑ Ιπποκράτειο"
+  year: "2011"
+  pfile_file_name: "ΑΙΜΟΧΡΩΜΑΤΩΣΗ.pdf"
+
+- id: 47
+  authors: "Κανελλοπούλου Θ"
+  title: "Ηπαρίνη σε εγκύους με επιπλοκές της κύησης"
+  magazine: "ΓΝΑ Ιπποκράτειο"
+  year: "2012"
+  pfile_file_name:
+
+- id: 48
+  authors: "Κανελλοπούλου Θ"
+  title: "Παράγοντες κινδύνου για 1ο επεισόδιο φλεβοθρόμβωσης στην κύηση"
+  magazine: "ΓΝΑ Ιπποκράτειο"
+  year: "2013"
+  pfile_file_name:
+
+- id: 49
+  authors: "Κανελλοπούλου Θ"
+  title: "Συνέκφραση MYC-BCL2 σε DLBCL"
+  magazine: "ΓΝΑ Ευαγγελισμός"
+  year: "2013"
+  pfile_file_name: "BLOOD-ΣΥΝΕΚΦΡΑΣΗ_MYC-BCL2_ΣΕ_DLBCL.pdf"

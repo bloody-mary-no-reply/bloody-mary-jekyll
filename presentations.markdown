@@ -44,6 +44,24 @@ layout: home
         {% endfor %}
       </table> 
     <br>
+    <h2><em>Βιβλιογραφικές Ενημερώεσεις</em></h2>
+      <table class="table table-striped">
+        {% for biblio in site.data.bibliographies %}
+          <tr>
+            <td>
+              {{ biblio.authors }}. {{ biblio.title }}. <i>{{ biblio.magazine }}. {{ biblio.year }}</i>
+            </td>
+            <td>
+              {% if biblio.pfile_file_name %}
+                <span class="label label-success">
+                  <a href="{{ site.baseurl }}/assets/publications/bibliographies/{{ biblio.pfile_file_name }}">Λήψη</a>
+                </span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table> 
+    <br>
     <h2><em>Παρουσιάσεις Περιστατικών</em></h2>
       <table class="table table-striped">
         {% for case in site.data.case_reports %}
