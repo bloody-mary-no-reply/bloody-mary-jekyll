@@ -8,24 +8,38 @@ layout: home
 
   <div class="article">
     <h2>Παρουσιάσεις</h2>
+    <h2><em>Ανασκοπήσεις</em></h2>
+      <table class="table table-striped">
+        {% for review in site.data.reviews %}
+          <tr>
+            <td>
+              {{ review.authors }}. {{ review.title }}. <i>{{ review.magazine }}. {{ review.year }}</i>
+            </td>
+            <td>
+              {% if review.pfile_file_name %}
+                <span class="label label-success">
+                  <a href="{{ site.baseurl }}/assets/publications/reviews/{{ review.pfile_file_name }}">Λήψη</a>
+                </span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table> 
+    <br>
     <h2><em>Παρουσιάσεις Περιστατικών</em></h2>
       <table class="table table-striped">
         {% for case in site.data.case_reports %}
           <tr>
             <td>
-              {{ case.authors }}. {{ case.title }}. <i> {{ case.magazine }}. {{ case.year }} </i>
+              {{ case.authors }}. {{ case.title }}. <i>{{ case.magazine }}. {{ case.year }}</i>
             </td>
             <td>
               <span class="label label-success">
-                <a href="{{ site.baseurl}}/assets/publications/case-reports/{{ case.pfile_file_name }}">Λήψη</a>
+                <a href="{{ site.baseurl }}/assets/publications/case-reports/{{ case.pfile_file_name }}">Λήψη</a>
               </span>
             </td>
           </tr>
         {% endfor %}
-</table> 
-  
-
+      </table> 
   </div>
-
-
 </div>
