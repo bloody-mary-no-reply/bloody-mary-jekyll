@@ -172,7 +172,7 @@ layout: home
       Διαθέτω πλούσιο <%= link_to 'ερευνητικό έργο', publications_path %> δημοσιευμένο τόσο σε ξένα όσο και ελληνικά
       περιοδικά.
       Υπάρχουν αναλυτικές πληροφορίες για τις <%= link_to 'Δημοσιεύσεις', publications_path %> αυτές, καθώς και για
-      τις <%= link_to 'Ανακοινώσεις', announcements_path %> και <a href="{{ site.baseurl }}/presentations">Παρουσιάσεις</a> στις
+      τις <a href="{{ site.baseurl }}/announcements">Ανακοινώσεις</a> και <a href="{{ site.baseurl }}/presentations">Παρουσιάσεις</a> στις
       οποίες έχω λάβει
       μέρος. Επιπρόσθετα, στον ιστότοπο υπάρχει ειδικό τμήμα αφιερωμένο σε
       σύντομα, <a href="{{ site.baseurl}}/articles">εκλαϊκευμένα άρθρα και συμβουλές</a> το
@@ -217,7 +217,9 @@ layout: home
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="counter">
-            <strong data-to="<%= Publication.where(pub_type: [PublicationType::INTERNATIONAL_ANNOUNCEMENT, PublicationType::GREEK_ANNOUNCEMENT]).count %>">0</strong>
+            {% capture greek_announcements %}{{ site.data.greek_announcements | size }}{% endcapture %}
+            {% capture international_announcements %}{{ site.data.international_announcements | size }}{% endcapture %}
+            <strong data-to="{{ greek_announcements | plus: international_announcements }}">0</strong>
             <label>Ανακοινώσεις</label>
           </div>
         </div>

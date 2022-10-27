@@ -44,7 +44,7 @@ layout: home
         {% endfor %}
       </table> 
     <br>
-    <h2><em>Βιβλιογραφικές Ενημερώεσεις</em></h2>
+    <h2><em>Βιβλιογραφικές Ενημερώσεις</em></h2>
       <table class="table table-striped">
         {% for biblio in site.data.bibliographies %}
           <tr>
