@@ -82,7 +82,7 @@ layout: home
              data-volume="mute"
              data-videowidth="100%"
              data-videoheight="100%"
-             data-videomp4="/video/landing.mp4"
+             data-videomp4="{{ site.baseurl }}/assets/video/landing.mp4"
              data-videopreload="preload"
              data-videoloop="none"
              data-forceCover="1"
