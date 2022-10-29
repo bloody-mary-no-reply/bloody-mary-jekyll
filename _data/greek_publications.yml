@@ -1,0 +1,65 @@
+- id: 14
+  authors: "<b>Κανελλοπούλου Θ</b>, Ποντίκογλου Χ"
+  title: "Χρόνια αναιμία με διαταραχή του αριθμού των αιμοπεταλίων ή/και του αριθμού των λευκών αιμοσφαιρίων"
+  magazine: "Κλινικά Φροντιστήρια"
+  year: "Αθήνα 2014"
+  page_range: "36-51"
+  issue: "26"
+  volume: "8"
+  pfile_file_name:
+  created_at: "2014-11-05 20:34:59 +0300"
+
+- id: 15
+  authors: "<b>Κανελλοπούλου Θ</b>, Γιαννούλη Σ, Πεκτασίδης Δ"
+  title: "Επίκτητη αιμολυτική αναιμία μη ανοσολογικής αρχής. Μικροαγγειοπαθητική αιμολυτική αναιμία"
+  magazine: "Haema"
+  year: "01/2013"
+  page_range: "47-57"
+  issue: "4"
+  volume: "1"
+  pfile_file_name:
+  created_at: "2014-11-05 20:34:59 +0300"
+
+- id: 16
+  authors: "Κοντοπίδου Φ, <b>Κανελλοπούλου Θ</b>"
+  title: "Λέμφωμα Hodgkin οζώδους λεμφοκυτταρικής επικράτησης"
+  magazine: "Haema"
+  year: "01/2012"
+  page_range: "233-242"
+  issue: "3"
+  volume: "3"
+  pfile_file_name:
+  created_at: "2014-11-05 20:34:59 +0300"
+
+- id: 17
+  authors: "Giannouli S, <b>Kanellopoulou T</b>, Pectasides D"
+  title: "Recent developments in Non-Hodgkin Lympoma(NHL) treatment"
+  magazine: "Forum of clinical oncology"
+  year: "2013"
+  page_range: "44-47"
+  issue: "4"
+  volume:
+  pfile_file_name:
+  created_at: "2014-11-05 20:34:59 +0300"
+
+- id: 18
+  authors: "<b>Kanellopoulou T</b>, Kontopidou FN, Dourakis SP"
+  title: "Hereditary spherocytosis in a young male. Report of an unusual case"
+  magazine: "Archives of Hellenic Medicine"
+  year: "2011"
+  page_range: "814-818"
+  issue: "28"
+  volume: "6"
+  pfile_file_name: "HS.pdf"
+  created_at: "2014-11-05 20:34:59 +0300"
+
+- id: 19
+  authors: "<b>Kanellopoulou T</b>, Kalogeropoulos N, Marinos L, Filiotou A"
+  title: "“Langerhans’ cell histiocytosis presenting as a primary penile lesion”"
+  magazine: "Archives of Hellenic Medicine"
+  year: "2011"
+  page_range: "709-710"
+  issue: "28"
+  volume:
+  pfile_file_name: "LCH.pdf"
+  created_at: "2014-11-05 20:34:59 +0300"

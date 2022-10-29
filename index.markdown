@@ -169,9 +169,9 @@ layout: home
     <img src="{{ "/assets/img/md81.JPG" | relative_url }}" width="300" height="211" class="pull-left img-responsive" hspace="20"/>
 
     <p>
-      Διαθέτω πλούσιο <%= link_to 'ερευνητικό έργο', publications_path %> δημοσιευμένο τόσο σε ξένα όσο και ελληνικά
+      Διαθέτω πλούσιο <a href="{{ site.baseurl }}/publications">ερευνητικό έργο</a>, δημοσιευμένο τόσο σε ξένα όσο και ελληνικά
       περιοδικά.
-      Υπάρχουν αναλυτικές πληροφορίες για τις <%= link_to 'Δημοσιεύσεις', publications_path %> αυτές, καθώς και για
+      Υπάρχουν αναλυτικές πληροφορίες για τις <a href="{{ site.baseurl }}/publications">Δημοσιεύσεις</a> αυτές, καθώς και για
       τις <a href="{{ site.baseurl }}/announcements">Ανακοινώσεις</a> και <a href="{{ site.baseurl }}/presentations">Παρουσιάσεις</a> στις
       οποίες έχω λάβει
       μέρος. Επιπρόσθετα, στον ιστότοπο υπάρχει ειδικό τμήμα αφιερωμένο σε
@@ -211,7 +211,9 @@ layout: home
       <div class="counters counters-text-light">
         <div class="col-md-3 col-sm-6">
           <div class="counter">
-            <strong data-to="<%= Publication.where(pub_type: [PublicationType::INTERNATIONAL_PUBLICATION, PublicationType::GREEK_PUBLICATION]).count %>">0</strong>
+            {% capture international_publications %}{{ site.data.international_publications | size }}{% endcapture %}
+            {% capture greek_publications %}{{ site.data.greek_publications | size }}{% endcapture %}
+            <strong data-to="{{ greek_publications | plus: international_publications }}">0</strong>
             <label>Δημοσιεύσεις</label>
           </div>
         </div>
