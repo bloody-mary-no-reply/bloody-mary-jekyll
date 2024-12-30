@@ -19,7 +19,7 @@ layout: home
 
       <h4 class="heading-primary">Τρόποι <strong>Επικοινωνίας</strong></h4>
       <ul class="list list-icons list-icons-style-3 mt-xlg">
-        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kanellopoulou@haematologist.gr">kanellopoulou@haematologist.gr</a></li>
+        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:theokanel@gmail.com">theokanel@gmail.com</a></li>
       </ul>
 
       <hr>
